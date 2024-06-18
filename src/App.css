@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom styles using the @layer directive */
+@layer utilities {
+  /* Thin and glowing red scrollbar styling for Chrome, Edge, and Safari */
+  #style-4::-webkit-scrollbar {
+    width: 8px; /* Thinner scrollbar width */
+  }
+
+  #style-4::-webkit-scrollbar-track {
+    background-color: #F5F5F5; /* Background color for the track */
+  }
+
+  #style-4::-webkit-scrollbar-thumb {
+    background-color: #ff0000; /* Red color for the thumb */
+    border-radius: 10px; /* Roundness of the thumb */
+    box-shadow: 0 0 10px #ff0000; /* Glowing effect */
+  }
+
+  /* Hover effect for the scrollbar thumb */
+  #style-4::-webkit-scrollbar-thumb:hover {
+    background-color: #e60000; /* Slightly darker red on hover */
+  }
+
+  /* Thin and glowing red scrollbar styling for Firefox */
+  #style-4 {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #ff0000 #F5F5F5; /* Thumb and track color */
+  }
+}
+
+.dark {
+    @apply bg-[#000000] text-white;
+}
+
+.modal-text{
+    color: black !important;
+}
+
+.active{
+    background-color: #00D991;
+    color: white;
+}

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+    @apply bg-[#000000] text-white;
+}
+
+.modal-text{
+    color: black !important;
+}
+
+.active{
+    background-color: #00D991;
+    color: white;
+}
+/* This will style the scrollbar for Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000; /* color of the tracking area */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #ff0000; /* creates padding around scroll thumb */
+  }
+  
+  /* This will style the scrollbar for Firefox */
+  * {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #ffffff #000000; /* thumb and track color */
+  }
+  
